@@ -1,0 +1,20 @@
+@import url("https://use.typekit.net/puj3cqq.css");
+@import "tailwindcss";
+
+@theme {
+  --font-georgia: "georgiapro", sans-serif; 
+}
+
+#root,
+body,
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch !important;
+  max-width: 1580px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  font-family: 'georgiapro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+}
