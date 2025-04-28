@@ -1,5 +1,5 @@
 import React from "react";
-import { artworks } from "../Constant/Constants";
+import { artworks } from "../../Constant/Constants";
 
 function ArtWorks() {
   return (

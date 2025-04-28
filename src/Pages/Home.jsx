@@ -1,7 +1,7 @@
 import React from 'react'
-import HeroSection from '../Components/HeroSection'
-import ExclusiveArts from '../Components/ExclusiveArts'
-import ArtWorks from '../Components/ArtWorks'
+import HeroSection from '../Components/Home/HeroSection'
+import ExclusiveArts from '../Components/Home/ExclusiveArts'
+import ArtWorks from '../Components/Home/ArtWorks'
 import Footer from '../Components/Footer'
 
 function Home() {

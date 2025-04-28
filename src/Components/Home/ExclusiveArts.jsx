@@ -1,13 +1,13 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useState, useRef } from "react";
-import img1 from "../assets/images/img1.png";
-import img2 from "../assets/images/img2.png";
-import img3 from "../assets/images/img3.png";
-import img4 from "../assets/images/img4.png";
-import img5 from "../assets/images/img1.png";
-import img6 from "../assets/images/img2.png";
-import img7 from "../assets/images/img3.png";
-import img8 from "../assets/images/img4.png";
+import img1 from "../../assets/images/img1.png";
+import img2 from "../../assets/images/img2.png";
+import img3 from "../../assets/images/img3.png";
+import img4 from "../../assets/images/img4.png";
+import img5 from "../../assets/images/img1.png";
+import img6 from "../../assets/images/img2.png";
+import img7 from "../../assets/images/img3.png";
+import img8 from "../../assets/images/img4.png";
 
 function ExclusiveArts({
   cardDimensions = { width: 999, height: 500 },

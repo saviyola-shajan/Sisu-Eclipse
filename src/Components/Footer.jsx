@@ -1,15 +1,15 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
-
+import logo from "../assets/images/sisuLogo.png"
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-b from-[#7b2c18] to-[#1b0d23] text-white px-6 md:px-20 py-10">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
         <div className="flex flex-col items-center md:items-start">
           <img 
-            src="/your-image-path.jpg" 
+            src={logo} 
             alt="Logo" 
-            className="w-24 h-24 object-cover rounded-md mb-4" 
+            className="w-40 h-40 object-cover ml-8 mb-4" 
           />
         </div>
         <div className="flex flex-col">
