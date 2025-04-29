@@ -22,7 +22,7 @@ function Header() {
           </Link>
         ))}
         <button className="bg-white text-black hover:text-[#ffffff] border border-transparent hover:border-[#F69005] text-lg font-semibold px-4 py-1 rounded-full hover:bg-[#00000080] transition">
-          Contact Us
+         <a href="/contact">Contact Us</a> 
         </button>
       </div>
     </div>

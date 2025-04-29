@@ -9,7 +9,7 @@ function Home() {
     <div>
       <HeroSection/>
       <ExclusiveArts/>
-      <ArtWorks/>
+      <ArtWorks limit={6}/>
       <Footer/>
     </div>
   )

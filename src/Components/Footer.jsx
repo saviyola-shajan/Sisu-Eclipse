@@ -1,9 +1,9 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
 import logo from "../assets/images/sisuLogo.png"
-export default function Footer() {
+export default function Footer({ className = "bg-gradient-to-b from-[#7b2c18] to-[#1b0d23]" }) {
   return (
-    <footer className="bg-gradient-to-b from-[#7b2c18] to-[#1b0d23] text-white px-6 md:px-20 py-10">
+    <footer className={`text-white px-6 md:px-20 py-10 ${className}`}>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
         <div className="flex flex-col items-center md:items-start">
           <img 
