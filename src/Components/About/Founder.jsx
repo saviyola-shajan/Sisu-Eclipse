@@ -2,7 +2,7 @@ import React from 'react';
 import img from "../../assets/images/image36.png"
  function Founder() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#330000] to-[#1a0e1a] px-6 py-12">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#7a0202]  to-[#1b101b] px-6 py-12">
       <div className="max-w-5xl w-full flex flex-col md:flex-row items-center gap-10">
         
         {/* Image Section */}

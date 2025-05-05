@@ -22,7 +22,7 @@ function HeroArtist() {
   const nextRef = useRef(null);
 
   return (
-    <div className="bg-gradient-to-b from-blue-900 via-blue-700 to-red-900 text-white min-h-screen px-24 py-16">
+    <div className="bg-gradient-to-b from-[#011425] via-[#013461] to-[#AF351D] text-white min-h-screen px-24 py-16">
       <div className="absolute top-6 left-0 w-full z-20">
         <Header />
       </div>

@@ -3,7 +3,7 @@ import Header from "../Header";
 import img from "../../assets/images/image36.png"
 const HeroAbout = () => {
   return (
-    <div className="bg-gradient-to-b from-[#030B26] to-[#0F1B35] text-white min-h-screen px-24 py-16">
+    <div className="bg-gradient-to-b from-[#030B26] to-[#002244] text-white min-h-screen px-24 py-16">
       <div className="absolute top-6 left-0 w-full z-20">
         <Header />
       </div>

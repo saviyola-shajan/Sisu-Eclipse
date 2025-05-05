@@ -8,7 +8,7 @@ function Gallery() {
     <div>
       <GalleryHeroSection/>
       <ArtWorks limit={12}/>
-      <Footer className="bg-gradient-to-r from-[#09061a] to-[#541D1D]"/>
+      <Footer className="bg-gradient-to-b from-[#7b2c18] to-[#1b0d23]"/>
     </div>
   )
 }

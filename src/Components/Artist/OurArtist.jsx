@@ -9,7 +9,7 @@ const artistImages = [
 ];
 function OurArtist() {
   return (
-    <div className="min-h-screen px-24 py-20 bg-gradient-to-b from-[#1b0e1a] via-[#1c1c39] to-[#0f1b2b] text-white flex flex-col">
+    <div className="min-h-screen px-24 py-20 bg-gradient-to-b from-[#AF351D] via-[#1c1c39] to-[#010f20] text-white flex flex-col">
       <div className="max-w-4xl text-center mb-12 px-16">
         <h2 className="text-8xl font-normal text-[#F69005] mb-6 text-left">
           Our Artist
