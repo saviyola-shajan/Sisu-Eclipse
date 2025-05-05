@@ -1,80 +1,96 @@
-import React, { useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import { FaAngleRight, FaAngleLeft } from "react-icons/fa6";
+import React, { useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import { FaArrowLeft,FaArrowRight } from "react-icons/fa6";
+import Header from "../Header";
+import img1 from "../../assets/images/img2.png";
+import img2 from "../../assets/images/img1.png";
+import img3 from "../../assets/images/img3.png";
+import img4 from "../../assets/images/img4.png";
 
 const slides = [
-  {
-    image: '/images/artist1.jpg',
-    title: 'Crafted to Inspire',
-    description:
-      'An SJU art balance across brushstroke with a deep and easy sense to relate to dilemmas of humanity, making art feel alive.',
-  },
-  {
-    image: '/images/artist2.jpg',
-    title: 'Bold Expression',
-    description:
-      'From London to Paris to LA, the vision is universal—bold, human, and emotional.',
-  },
+  { image: img1 },
+  { image: img2 },
+  { image: img3 },
+  { image: img4 },
 ];
 
 function HeroArtist() {
-    const prevRef = useRef(null);
-    const nextRef = useRef(null);
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+
   return (
-    <div className="bg-gradient-to-b from-blue-900 via-blue-700 to-red-900 text-white min-h-screen p-10">
-    <div className="max-w-5xl mx-auto">
-      <h1 className="text-yellow-400 text-5xl font-semibold mb-4">Artist</h1>
-      <p className="text-white text-sm max-w-2xl mb-10">
-        Art is the purest form of human expression, a revolution that transcends boundaries, cultures, and languages. From delicate brushstrokes on canvas to the raw sparks of sculpture.
-      </p>
+    <div className="bg-gradient-to-b from-blue-900 via-blue-700 to-red-900 text-white min-h-screen px-24 py-16">
+      <div className="absolute top-6 left-0 w-full z-20">
+        <Header />
+      </div>
+      <div className="max-w-5xl mx-auto mt-20">
+        <h1 className="text-[#F69005] text-8xl font-normal mb-4">Artist</h1>
+        <p className="text-[#ffffff] text-xl font-normal mb-10">
+          Art is the purest form of human expression, a revolution that
+          transcends boundaries, cultures, and languages. From delicate
+          brushstrokes on canvas to the raw sparks of sculpture.
+        </p>
 
-      <div className="bg-white text-black p-6 rounded-xl shadow-lg">
-        <Swiper
-          modules={[Navigation]}
-          spaceBetween={50}
-          slidesPerView={1}
-          onInit={(swiper) => {
-            swiper.params.navigation.prevEl = prevRef.current;
-            swiper.params.navigation.nextEl = nextRef.current;
-            swiper.navigation.init();
-            swiper.navigation.update();
-          }}
-        >
-          {slides.map((slide, index) => (
-            <SwiperSlide key={index}>
-              <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-                <div className="md:w-1/2">
-                  <h2 className="text-xl font-semibold mb-2">{slide.title}</h2>
-                  <p className="text-gray-600">{slide.description}</p>
-                </div>
-                <div className="md:w-1/2">
-                  <img
-                    src={slide.image}
-                    alt="Artist"
-                    className="rounded-lg w-full h-64 object-cover"
-                  />
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
+        <div className="bg-white p-10 h-auto ">
+          <div className="flex flex-col md:flex-row  gap-6 justify-center items-center">
+            {/* Left Side: Text */}
+            <div className="md:w-1/3 w-full">
+              <h2 className="text-4xl text-[#121212]  font-semibold mb-2">Crafted to <br/><span className="text-6xl font-semibold">Inspire</span></h2>
+              <p className="text-[#000000] font-light text-base mt-4">
+                An SJU art balance across brushstroke with a deep and easy sense
+                to relate to dilemmas of humanity, making art feel alive.
+              </p>
+            </div>
 
-          {/* Custom Navigation */}
-          <div className="flex justify-center mt-6 gap-4">
-            <button ref={prevRef} className="bg-gray-200 p-2 rounded-full hover:bg-gray-300">
-              <FaAngleLeft size={20} />
-            </button>
-            <button ref={nextRef} className="bg-gray-200 p-2 rounded-full hover:bg-gray-300">
-              <FaAngleRight size={20} />
-            </button>
+            {/* Right Side: Swiper */}
+            <div className="md:w-2/3 w-full">
+              <Swiper
+                modules={[Navigation]}
+                slidesPerView={1.2}
+                centeredSlides={true}
+                loop={true}
+                spaceBetween={20}
+                onInit={(swiper) => {
+                  swiper.params.navigation.prevEl = prevRef.current;
+                  swiper.params.navigation.nextEl = nextRef.current;
+                  swiper.navigation.init();
+                  swiper.navigation.update();
+                }}
+                >
+                {slides.map((slide, index) => (
+                  <SwiperSlide key={index}>
+                    <img
+                      src={slide.image}
+                      alt={`Artist ${index + 1}`}
+                      className="rounded-lg w-full h-80 object-cover"
+                    />
+                  </SwiperSlide>
+                ))}
+                {/* Custom Navigation */}
+                <div className="flex justify-center mt-4 gap-4">
+                  <button
+                    ref={prevRef}
+                    className="bg-gray-300 p-2 rounded-full"
+                  >
+                    <FaArrowLeft size={18} className="text-black"/>
+                  </button>
+                  <button
+                    ref={nextRef}
+                    className="bg-gray-300 p-2 rounded-full"
+                  >
+                    <FaArrowRight size={18} className="text-black"/>
+                  </button>
+                </div>
+              </Swiper>
+            </div>
           </div>
-        </Swiper>
+        </div>
       </div>
     </div>
-  </div>
-  )
+  );
 }
 
 export default HeroArtist;

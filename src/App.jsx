@@ -3,6 +3,7 @@ import Home from "./Pages/Home";
 import Gallery from "./Pages/Gallery"; // (assuming you have this Gallery page)
 import Contact from "./Pages/Contact";
 import Artist from "./Pages/Artist";
+import About from "./Pages/About";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className="font-georgia">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About/>} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/featured-artist" element={<Artist />} />
           <Route path="/contact" element={<Contact/>} />

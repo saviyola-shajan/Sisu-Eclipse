@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'; // Important!
+import React from "react";
+import { Link } from "react-router-dom"; // Important!
 
 function Header() {
   const menuItems = [
@@ -21,12 +21,15 @@ function Header() {
             {item.title}
           </Link>
         ))}
-        <button className="bg-white text-black hover:text-[#ffffff] border border-transparent hover:border-[#F69005] text-lg font-semibold px-4 py-1 rounded-full hover:bg-[#00000080] transition">
-         <a href="/contact">Contact Us</a> 
-        </button>
+        <Link
+          to="/contact"
+          className="bg-white text-black hover:text-[#ffffff] border border-transparent hover:border-[#F69005] text-lg font-semibold px-4 py-1 rounded-full hover:bg-[#00000080] transition"
+        >
+          Contact Us
+        </Link>
       </div>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;
