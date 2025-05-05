@@ -13,7 +13,7 @@ function ConnectWithUs() {
         <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg shadow-md flex flex-col items-center">
           <MdLocationOn className="text-[#F69005] text-3xl mb-2" />
           <h3 className="text-lg font-semibold text-[#F69005] mb-2">Location</h3>
-          <p className="text-sm text-center text-white/80">
+          <p className="text-lg text-center text-white/80 font-Dm-sans">
             9 Limerick Lane, Limerick<br />
             City/County Limerick, Ireland
           </p>
@@ -23,14 +23,14 @@ function ConnectWithUs() {
         <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg shadow-md flex flex-col items-center">
           <MdPhone className="text-[#F69005] text-3xl mb-2" />
           <h3 className="text-lg font-semibold text-[#F69005] mb-2">Phone</h3>
-          <p className="text-sm text-white/80">+353 83 874 2273</p>
+          <p className="text-lg text-white/80 font-Dm-sans">+353 83 874 2273</p>
         </div>
 
         {/* Email */}
         <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg shadow-md flex flex-col items-center">
           <MdEmail className="text-[#F69005] text-3xl mb-2" />
           <h3 className="text-lg font-semibold text-[#F69005] mb-2">Email</h3>
-          <p className="text-sm text-white/80">shane@sisueclipse.com</p>
+          <p className="text-lg text-white/80 font-Dm-sans">shane@sisueclipse.com</p>
         </div>
       </div>
     </div>

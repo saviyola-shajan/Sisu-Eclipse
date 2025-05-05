@@ -25,7 +25,7 @@ function Reflection() {
         </button>
       </div>
       {open && (
-        <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 text-center max-w-xl px-4 text-sm text-gray-300 z-10 ">
+        <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 text-center max-w-xl px-4 text-sm text-gray-300 z-10 font-Dm-sans">
           <p>
             This is your dropdown content. You can place any reflective message,
             quote, or descriptive text here. It appears when the arrow is

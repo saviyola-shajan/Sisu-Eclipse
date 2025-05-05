@@ -32,7 +32,7 @@ function GalleryHeroSection() {
               <p className="mt-10 text-5xl text-[#FFFFFF] font-normal">
                 Crafted to Inspire
               </p>
-              <p className="text-left text-[#FFFFFF] font-normal  mt-8 text-xl">
+              <p className="text-left text-[#FFFFFF] font-normal  mt-8 text-xl font-Dm-sans">
                 At SISUI, we believe every brushstroke tells a story and every
                 canvas holds a Universe of Emotions, waiting for someone like
                 you to Pause, Look Deeper, and Feel that Spark of Connection.

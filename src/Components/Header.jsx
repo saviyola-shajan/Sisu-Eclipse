@@ -6,11 +6,11 @@ function Header() {
     { title: "Home", path: "/" },
     { title: "About", path: "/about" },
     { title: "Featured Artist", path: "/featured-artist" },
-    { title: "Gallery", path: "/gallery" },
+    { title: "Gailearaí", path: "/gallery" },
   ];
 
   return (
-    <div className="relative z-10 flex justify-center">
+    <div className="relative z-10 flex justify-center font-Dm-sans">
       <div className="flex gap-16 px-10 py-2 rounded-full border items-center justify-center border-gray-500/80 backdrop-blur-md bg-[#00000080]">
         {menuItems.map((item, index) => (
           <Link

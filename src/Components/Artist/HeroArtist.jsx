@@ -5,10 +5,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { FaArrowLeft,FaArrowRight } from "react-icons/fa6";
 import Header from "../Header";
-import img1 from "../../assets/images/img2.png";
-import img2 from "../../assets/images/img1.png";
-import img3 from "../../assets/images/img3.png";
-import img4 from "../../assets/images/img4.png";
+import img1 from "../../assets/images/artist1.png";
+import img2 from "../../assets/images/artist1.png";
+import img3 from "../../assets/images/artist1.png";
+import img4 from "../../assets/images/artist1.png";
 
 const slides = [
   { image: img1 },
@@ -28,7 +28,7 @@ function HeroArtist() {
       </div>
       <div className="max-w-5xl mx-auto mt-20">
         <h1 className="text-[#F69005] text-8xl font-normal mb-4">Artist</h1>
-        <p className="text-[#ffffff] text-xl font-normal mb-10">
+        <p className="text-[#ffffff] text-xl font-normal mb-10 font-Dm-sans">
           Art is the purest form of human expression, a revolution that
           transcends boundaries, cultures, and languages. From delicate
           brushstrokes on canvas to the raw sparks of sculpture.
@@ -39,7 +39,7 @@ function HeroArtist() {
             {/* Left Side: Text */}
             <div className="md:w-1/3 w-full">
               <h2 className="text-4xl text-[#121212]  font-semibold mb-2">Crafted to <br/><span className="text-6xl font-semibold">Inspire</span></h2>
-              <p className="text-[#000000] font-light text-base mt-4">
+              <p className="text-[#000000] font-normal text-base mt-4 font-Dm-sans">
                 An SJU art balance across brushstroke with a deep and easy sense
                 to relate to dilemmas of humanity, making art feel alive.
               </p>
@@ -65,7 +65,7 @@ function HeroArtist() {
                     <img
                       src={slide.image}
                       alt={`Artist ${index + 1}`}
-                      className="rounded-lg w-full h-80 object-cover"
+                      className=" w-full h-80 object-cover"
                     />
                   </SwiperSlide>
                 ))}

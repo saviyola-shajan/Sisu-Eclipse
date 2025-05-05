@@ -5,6 +5,10 @@ const artistImages = [
   { src: img, alt: "Artist 0" }, 
   { src: img, alt: "Artist 0" }, 
   { src: img, alt: "Artist 0" }, 
+  { src: img, alt: "Artist 0" }, 
+  { src: img, alt: "Artist 0" }, 
+  { src: img, alt: "Artist 0" }, 
+  { src: img, alt: "Artist 0" }, 
 
 ];
 function OurArtist() {
@@ -14,7 +18,7 @@ function OurArtist() {
         <h2 className="text-8xl font-normal text-[#F69005] mb-6 text-left">
           Our Artist
         </h2>
-        <p className="text-lg text-[#ffffff] font-light text-left">
+        <p className="text-lg text-[#ffffff] font-light text-left font-Dm-sans">
           At its essence, S8UL is about those fleeting, transformative moments—a
           brief yet powerful connection between the player and the art or
           artist. Whether it's an instant spark or a connection that lingers
@@ -25,13 +29,13 @@ function OurArtist() {
           acknowledging that contribution without fanfare.
         </p>
       </div>
-      <div className="flex flex-wrap justify-center gap-10">
+      <div className="flex flex-wrap justify-center gap-16">
         {artistImages.map((image, idx) => (
           <img
             key={idx}
             src={image.src}
             alt={image.alt}
-            className={`w-60 h-68 object-cover rounded-2xl shadow-lg transition-transform duration-300 hover:scale-105 ${
+            className={`w-60 h-68 object-cover rounded-tr-2xl rounded-bl-2xl shadow-lg transition-transform duration-300 hover:scale-105 ${
               idx % 2 === 0 ? "mt-24" : "mb-24"
             }`}
           />
