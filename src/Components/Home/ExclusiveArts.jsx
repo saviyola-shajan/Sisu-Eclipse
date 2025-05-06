@@ -51,7 +51,7 @@ function ExclusiveArts({
     }}
     >
         <h1 className="text-[#F69005] font-normal  text-8xl ">Exclusive Arts</h1>
-        <p className="max-w-4xl text-[#ffffff] text-xl font-medium mb-4">Art is the purest form of human expression, a medium that transcends boundaries, cultures, and languages. From delicate brushstrokes on canvas to the raw textures of sculpture</p>
+        <p className="max-w-5xl text-[#ffffff] text-xl font-normal mb-4 font-Dm-sans tracking-wide">Art is the purest form of human expression, a medium that transcends boundaries, cultures, and languages. From delicate brushstrokes on canvas to the raw textures of sculpture</p>
       <div className="sticky top-0 h-screen flex items-center justify-center">
         <div
           className="relative"

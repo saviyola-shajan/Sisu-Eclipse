@@ -14,16 +14,16 @@ export default function Footer({ className = "bg-gradient-to-b from-[#7b2c18] to
         </div>
         <div className="flex flex-col">
         <div className="space-y-2 text-lg mt-12">
-            <div className="flex items-center gap-2 mb-4">
-              <MdLocationOn className="text-[#F69005] w-6 h-6" />
+            <div className="flex items-center gap-4 mb-4">
+              <MdLocationOn className="text-[#F69005] w-7 h-7" />
               <span>1 Sarsfield Lane, Limerick,<br/> City Centre, Limerick, Ireland</span>
             </div>
-            <div className="flex items-center gap-2 mb-4">
-              <MdEmail className="text-[#F69005] w-6 h-6 " />
+            <div className="flex items-center gap-4 mb-4">
+              <MdEmail className="text-[#F69005] w-7 h-7 " />
               <span>support@galaxon.com</span>
             </div>
-            <div className="flex items-center gap-2 mb-4">
-              <MdPhone className="text-[#F69005] w-6 h-6 " />
+            <div className="flex items-center gap-4 mb-4">
+              <MdPhone className="text-[#F69005] w-7 h-7 " />
               <span>+1 987-654-8948</span>
             </div>
           </div>
@@ -31,26 +31,23 @@ export default function Footer({ className = "bg-gradient-to-b from-[#7b2c18] to
         <div className="flex flex-col">
           <h3 className="text-[#F69005] text-2xl font-medium mb-4">Quick Links</h3>
           <ul className="space-y-2 text-lg font-normal">
-            <li><a href="#" className="hover:underline">About Us</a></li>
-            <li><a href="#" className="hover:underline">Exclusive</a></li>
-            <li><a href="#" className="hover:underline">Featured Artist</a></li>
-            <li><a href="#" className="hover:underline">Available Arts</a></li>
-            <li><a href="#" className="hover:underline">Contact</a></li>
+          <li><a href="/" className="hover:underline">Home</a></li>
+            <li><a href="/about" className="hover:underline">About Us</a></li>
+            <li><a href="/featured-artist" className="hover:underline">Featured Artist</a></li>
+            <li><a href="/gallery" className="hover:underline">Gailearaí</a></li>
           </ul>
         </div>
 
         <div className="flex flex-col">
           <h3 className="text-[#F69005] text-2xl font-medium mb-4">Contact Us</h3>
           <ul className="space-y-2 text-lg font-normal">
-            <li className="flex items-center gap-2"><FaFacebookF className="text-[#F69005]"/> Facebook</li>
-            <li className="flex items-center gap-2"><FaInstagram className="text-[#F69005]"/> Instagram</li>
-            <li className="flex items-center gap-2"><FaLinkedinIn className="text-[#F69005]"/> LinkedIn</li>
-            <li className="flex items-center gap-2"><FaYoutube className="text-[#F69005]"/> YouTube</li>
+            <li className="flex items-center gap-4"><FaFacebookF className="text-[#F69005] text-xl"/> Facebook</li>
+            <li className="flex items-center gap-4"><FaInstagram className="text-[#F69005] text-xl"/> Instagram</li>
+            <li className="flex items-center gap-4"><FaLinkedinIn className="text-[#F69005] text-xl"/> LinkedIn</li>
+            <li className="flex items-center gap-4"><FaYoutube className="text-[#F69005] text-xl"/> YouTube</li>
           </ul>
         </div>
       </div>
-
-      {/* Bottom Line */}
       <div className="border-t border-gray-600 mt-10 pt-4 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
         <p>Privacy Policy</p>
         <p>Terms of Service</p>

@@ -7,7 +7,7 @@ function ArtWorks({ limit = 6 }) {
   return (
     <section className="py-16 px-24 h-auto bg-gradient-to-b from-[#0f172a] to-[#7b2c18] text-white relative">
       <h2 className="text-7xl font-medium text-[#F69005] mb-4 font-georgia">ART WORKS</h2>
-      <p className="max-w-5xl text-[#ffffff] text-xl font-normal mb-16 font-Dm-sans">
+      <p className="max-w-5xl text-[#ffffff] text-xl font-normal mb-16 font-Dm-sans tracking-wide">
         Art is the purest form of human expression, a medium that transcends
         boundaries, cultures, and languages. From delicate brushstrokes to
         expressive bold new statements of sculpture.

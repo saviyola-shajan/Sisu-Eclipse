@@ -28,7 +28,7 @@ function HeroArtist() {
       </div>
       <div className="max-w-5xl mx-auto mt-20">
         <h1 className="text-[#F69005] text-8xl font-normal mb-4">Artist</h1>
-        <p className="text-[#ffffff] text-xl font-normal mb-10 font-Dm-sans">
+        <p className="text-[#ffffff] text-xl font-normal mb-10 font-Dm-sans tracking-wide">
           Art is the purest form of human expression, a revolution that
           transcends boundaries, cultures, and languages. From delicate
           brushstrokes on canvas to the raw sparks of sculpture.

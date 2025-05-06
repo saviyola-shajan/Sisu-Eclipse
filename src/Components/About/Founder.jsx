@@ -12,7 +12,7 @@ function Founder() {
             Founder Voice
           </h2>
           <h3 className="text-3xl font-normal mb-2">Shane Lannon</h3>
-          <p className="text-base font-extralight text-justify font-Dm-sans">
+          <p className="text-base font-extralight text-justify font-Dm-sans tracking-wide">
             At SSLU we believe every brushstroke tells a Story and every canvas
             holds a Universe of Emotions, waiting for someone like you to Pause,
             Look Deeper, and Feel that Spark of Connection. For us, the most

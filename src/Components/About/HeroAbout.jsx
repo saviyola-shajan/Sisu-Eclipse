@@ -9,7 +9,7 @@ const HeroAbout = () => {
       </div>
       <div className="text-left mb-12 mt-20">
         <h2 className="text-7xl font-normal text-[#F69005] mb-2">About</h2>
-        <p className="text-lg text-[#ffffff] max-w-4xl font-Dm-sans">
+        <p className="text-lg text-[#ffffff] max-w-4xl font-Dm-sans tracking-wide">
           Art is the purest form of human expression, a medium that transcends
           boundaries, cultures, and languages. From delicate brushstrokes on
           canvas to the raw textures of sculpture.
@@ -26,7 +26,7 @@ const HeroAbout = () => {
         </div>
 
         <div className="space-y-6">
-          <p className="text-lg text-gray-300 leading-relaxed font-Dm-sans">
+          <p className="text-lg text-gray-300 leading-relaxed font-Dm-sans tracking-wide mb-12 text-justify">
             At its essence, SBU is about those fleeting, transformative
             moments—a brief yet powerful connection between the buyer and the
             art or artist. Whether it's an instant spark or a connection that
