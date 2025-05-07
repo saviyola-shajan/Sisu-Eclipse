@@ -34,7 +34,6 @@ function ExclusiveArts({
     offset: ["start end", "end start"],
   });
 
-  // Calculate individual card progress
   const cardProgress = (index) => {
     const start = index / cards.length;
     const end = (index + 1) / cards.length;
@@ -43,19 +42,25 @@ function ExclusiveArts({
 
   return (
     <div
-    ref={containerRef}
-    className="relative h-[300vh] bg-gradient-to-b from-[#002F65] to-[#0f172a]  px-24 py-20 "
-    style={{
-      width: "100%",
-      perspective: 600,
-    }}
+      ref={containerRef}
+      className="relative h-[300vh] bg-gradient-to-b from-[#002F65] to-[#0f172a] px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 py-10 sm:py-14 md:py-16 lg:py-20"
+      style={{
+        width: "100%",
+        perspective: 600,
+      }}
     >
-        <h1 className="text-[#F69005] font-normal  text-8xl ">Exclusive Arts</h1>
-        <p className="max-w-5xl text-[#ffffff] text-xl font-normal mb-4 font-Dm-sans tracking-wide">Art is the purest form of human expression, a medium that transcends boundaries, cultures, and languages. From delicate brushstrokes on canvas to the raw textures of sculpture</p>
+      <h1 className="text-[#F69005] font-normal text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-4 text-center md:text-left">
+        Exclusive Arts
+      </h1>
+      <p className="max-w-5xl text-[#ffffff] text-base sm:text-lg md:text-xl font-normal mb-0 font-Dm-sans tracking-wide text-center md:text-left">
+        Art is the purest form of human expression, a medium that transcends
+        boundaries, cultures, and languages. From delicate brushstrokes on canvas
+        to the raw textures of sculpture
+      </p>
       <div className="sticky top-0 h-screen flex items-center justify-center">
         <div
-          className="relative"
-          style={{ width: cardDimensions.width, height: cardDimensions.height }}
+          className="relative w-full max-w-[90vw] sm:max-w-[600px] md:max-w-[700px] lg:max-w-[800px] xl:max-w-[999px]"
+          style={{ height: cardDimensions.height }}
         >
           {cards.map((card, index) => {
             const progress = cardProgress(index);
@@ -69,8 +74,6 @@ function ExclusiveArts({
                 key={card.id}
                 className="absolute rounded-2xl overflow-hidden h-full w-full"
                 style={{
-                  width: cardDimensions.width,
-                  height: cardDimensions.height,
                   scale,
                   opacity,
                   rotateZ,
