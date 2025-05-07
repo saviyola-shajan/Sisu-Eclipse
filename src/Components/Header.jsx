@@ -40,8 +40,7 @@ function Header() {
       </div>
 
       {/* Mobile Header */}
-      <div className="md:hidden relative z-20 px-4 py-2 flex items-center justify-end">
-        {/* <h1 className="text-[#F69005] text-xl font-bold">Logo</h1> */}
+      <div className="md:hidden fixed top-0 left-0 right-0 z-50 px-4 py-2 flex items-center justify-end bg-[#00000080] backdrop-blur-md">
         <button onClick={toggleMobileMenu} className="text-[#F69005] text-3xl">
           {isMobileMenuOpen ? <FiX /> : <FiMenu />}
         </button>
@@ -49,11 +48,11 @@ function Header() {
 
       {/* Mobile Menu Drawer */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-0 left-0 right-0 z-10 bg-[#000000cc] backdrop-blur-md p-4 flex flex-col items-center gap-2">
+        <div className="md:hidden fixed top-10 left-0 right-0 z-40 bg-[#00000080] backdrop-blur-md p-4 flex flex-col items-center gap-4">
           {menuItems.map((item, index) => (
             <Link
               key={index}
-              to={item.path}
+              to={item.path} 
               onClick={() => setIsMobileMenuOpen(false)}
               className="text-[#F69005] text-lg font-medium"
             >

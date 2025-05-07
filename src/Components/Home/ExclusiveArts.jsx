@@ -43,7 +43,7 @@ function ExclusiveArts({
   return (
     <div
       ref={containerRef}
-      className="relative h-[300vh] bg-gradient-to-b from-[#002F65] to-[#0f172a] px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 py-10 sm:py-14 md:py-16 lg:py-20"
+      className="relative md: h-[110vh] md:h-[300vh] bg-gradient-to-b from-[#002F65] to-[#0f172a] px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 py-10 sm:py-14 md:py-16 lg:py-20"
       style={{
         width: "100%",
         perspective: 600,
@@ -57,7 +57,7 @@ function ExclusiveArts({
         boundaries, cultures, and languages. From delicate brushstrokes on canvas
         to the raw textures of sculpture
       </p>
-      <div className="sticky top-0 h-screen flex items-center justify-center">
+      <div className="sticky top-0 h-[80vh] md:h-screen flex items-center justify-center">
         <div
           className="relative w-full max-w-[90vw] sm:max-w-[600px] md:max-w-[700px] lg:max-w-[800px] xl:max-w-[999px]"
           style={{ height: cardDimensions.height }}

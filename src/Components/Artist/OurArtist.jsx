@@ -19,7 +19,7 @@ function OurArtist() {
         <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-normal text-[#F69005] mb-6 text-center md:text-left">
           Our Artist
         </h2>
-        <p className="text-base sm:text-lg text-[#ffffff] font-light text-left font-Dm-sans tracking-wide">
+        <p className="text-base sm:text-lg text-[#ffffff] font-light md:text-left font-Dm-sans tracking-wide text-justify">
           At its essence, S8UL is about those fleeting, transformative moments—a
           brief yet powerful connection between the player and the art or
           artist. Whether it's an instant spark or a connection that lingers

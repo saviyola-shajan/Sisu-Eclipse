@@ -4,11 +4,13 @@ import Gallery from "./Pages/Gallery"; // (assuming you have this Gallery page)
 import Contact from "./Pages/Contact";
 import Artist from "./Pages/Artist";
 import About from "./Pages/About";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
     <Router>
       <div className="font-georgia">
+        <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About/>} />
