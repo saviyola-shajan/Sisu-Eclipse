@@ -4,10 +4,8 @@ import img1 from "../../assets/images/img1.png";
 import img2 from "../../assets/images/img2.png";
 import img3 from "../../assets/images/img3.png";
 import img4 from "../../assets/images/img4.png";
-import img5 from "../../assets/images/img1.png";
-import img6 from "../../assets/images/img2.png";
-import img7 from "../../assets/images/img3.png";
-import img8 from "../../assets/images/img4.png";
+import img5 from "../../assets/images/img5.png";
+import img6 from "../../assets/images/img6.png";
 
 function ExclusiveArts({
   cardDimensions = { width: 999, height: 500 },
@@ -18,13 +16,17 @@ function ExclusiveArts({
       ? cardsData
       : [
           { id: 1, img: img1 },
-          { id: 2, img: img2 },
-          { id: 3, img: img3 },
           { id: 4, img: img4 },
-          { id: 5, img: img5 },
           { id: 6, img: img6 },
-          { id: 7, img: img7 },
-          { id: 8, img: img8 },
+          { id: 3, img: img3 },
+          { id: 2, img: img2 },
+          { id: 5, img: img5 },
+           { id: 1, img: img1 },
+          { id: 4, img: img4 },
+          { id: 6, img: img6 },
+          { id: 3, img: img3 },
+          { id: 2, img: img2 },
+          { id: 5, img: img5 },
         ]
   );
 
@@ -54,8 +56,8 @@ function ExclusiveArts({
       </h1>
       <p className="max-w-5xl text-[#ffffff] text-base sm:text-lg md:text-xl font-normal mb-0 font-Dm-sans tracking-wide text-center md:text-left">
         Art is the purest form of human expression, a medium that transcends
-        boundaries, cultures, and languages. From delicate brushstrokes on canvas
-        to the raw textures of sculpture
+        boundaries, cultures, and languages. From delicate brushstrokes on
+        canvas to the raw textures of sculpture
       </p>
       <div className="sticky top-0 h-[80vh] md:h-screen flex items-center justify-center">
         <div
@@ -72,7 +74,7 @@ function ExclusiveArts({
             return (
               <motion.div
                 key={card.id}
-                className="absolute rounded-2xl overflow-hidden h-full w-full"
+                className="absolute rounded-2xl overflow-hidden h-full w-full flex items-center justify-center"
                 style={{
                   scale,
                   opacity,
@@ -84,7 +86,7 @@ function ExclusiveArts({
                 <img
                   src={card.img}
                   alt={`card-${card.id}`}
-                  className="w-full h-full object-cover"
+                  className="max-w-full max-h-full object-contain rounded-2xl"
                 />
               </motion.div>
             );
