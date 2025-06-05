@@ -45,7 +45,7 @@ function ExclusiveArts({
   return (
     <div
       ref={containerRef}
-      className="relative md: h-[110vh] md:h-[300vh] bg-gradient-to-b from-[#002F65] to-[#0f172a] px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 py-10 sm:py-14 md:py-16 lg:py-20"
+      className="relative h-[110vh] md:h-[300vh] bg-gradient-to-b from-[#002F65] to-[#0f172a] px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 py-10 sm:py-14 md:py-16 lg:py-20"
       style={{
         width: "100%",
         perspective: 600,

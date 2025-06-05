@@ -4,7 +4,7 @@ import img from "../../assets/images/image36.png";
 
 const HeroAbout = () => {
   return (
-    <div className="bg-gradient-to-b from-[#030B26] to-[#002244] text-white min-h-screen px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 py-12 sm:py-16 text-center md:text-left">
+    <div className="bg-gradient-to-b from-[#030B26] to-[#002244] text-white min-h-screen px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 py-8 sm:py-16 text-center md:text-left">
       <div className="absolute top-6 left-0 w-full z-20">
         <Header />
       </div>
@@ -41,9 +41,6 @@ const HeroAbout = () => {
             beauty someone else has brought into existence, and silently, humbly
             acknowledging that contribution without fanfare.
           </p>
-          <button className="border border-[#E46104] px-6 py-2 rounded-full text-sm hover:bg-[#E46104] hover:text-black transition">
-            Contact Us
-          </button>
         </div>
       </div>
     </div>

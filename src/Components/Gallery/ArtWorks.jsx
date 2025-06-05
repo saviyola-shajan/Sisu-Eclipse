@@ -14,16 +14,17 @@ const artworks = [
 
 function ArtWorks() {
   return (
-    <div className=" px-32 py-20 bg-gradient-to-b from-[#0f172a] via-[#1c1423] to-[#7b2c18]">
-      <h2 className="text-7xl font-bold text-[#F69005] mb-10">ART WORKS</h2>
+    <div className="bg-gradient-to-b from-[#0f172a] via-[#281838] to-[#7b2c18] py-20 px-6 sm:px-10 md:px-32">
+      <h2 className="text-5xl md:text-7xl font-bold text-[#F69005] mb-10 text-center md:text-left">
+        ART WORKS
+      </h2>
 
-      <div className="space-y-8">
+      {/* Desktop View */}
+      <div className="hidden md:block space-y-8">
         {artworks.map(([left, right], i) => {
           const isEvenRow = i % 2 === 0;
-
           return (
             <div key={i} className="flex gap-6">
-              {/* First image in row */}
               <div
                 className={`${
                   isEvenRow ? "w-[35%]" : "w-[65%]"
@@ -34,10 +35,11 @@ function ArtWorks() {
                   alt="artwork"
                   className="w-full h-full object-cover rounded-xl"
                 />
-                <p className="text-sm text-[#F69005] font-medium mt-1 ml-1">© Ajith Kumar</p>
+                <p className="text-sm text-[#F69005] font-medium mt-1 ml-1">
+                  © Ajith Kumar
+                </p>
               </div>
 
-              {/* Second image in row */}
               <div
                 className={`${
                   isEvenRow ? "w-[65%]" : "w-[35%]"
@@ -48,12 +50,37 @@ function ArtWorks() {
                   alt="artwork"
                   className="w-full h-full object-cover rounded-xl"
                 />
-                <p className="text-sm text-[#F69005] font-medium mt-1 ml-1">© Ajith Kumar</p>
+                <p className="text-sm text-[#F69005] font-medium mt-1 ml-1">
+                  © Ajith Kumar
+                </p>
               </div>
             </div>
           );
         })}
       </div>
+{/* Mobile View */}
+<div className="block md:hidden space-y-6">
+  {[
+    { img: img1, type: "landscape" },
+    { img: img3, type: "portrait" },
+    { img: img4, type: "landscape" },
+    { img: img6, type: "portrait" },
+    { img: img2, type: "landscape" },
+    { img: img5, type: "portrait" },
+  ].map((art, i) => (
+    <div
+      key={i}
+      className={`w-full ${art.type === "portrait" ? "h-[80vh]" : "h-44"} overflow-hidden rounded-xl`}
+    >
+      <img
+        src={art.img}
+        alt={`artwork-${i}`}
+        className="w-full h-full object-cover rounded-xl"
+      />
+      <p className="text-sm text-[#F69005] font-medium mt-1 ml-1">© Ajith Kumar</p>
+    </div>
+  ))}
+</div>
     </div>
   );
 }

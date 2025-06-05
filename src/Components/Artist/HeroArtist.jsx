@@ -23,65 +23,75 @@ function HeroArtist() {
 
   return (
     <div className="bg-gradient-to-b from-[#011425] via-[#013461] to-[#AF351D] text-white min-h-screen px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20 2xl:px-24 py-10 sm:py-12 md:py-16">
+      {/* Header */}
       <div className="absolute top-6 left-0 w-full z-20">
         <Header />
       </div>
+
       <div className="max-w-7xl mx-auto mt-24 sm:mt-20 text-center md:text-left">
-        <h1 className="text-[#F69005] text-6xl md:text-7xl lg:text-8xl font-normal mb-4">
+        {/* Title */}
+        <h1 className="text-[#F69005] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal mb-4">
           Artist
         </h1>
-        <p className="text-[#ffffff] text-base sm:text-lg md:text-xl font-normal mb-10 font-Dm-sans tracking-wide">
+        <p className="text-white text-base sm:text-lg md:text-xl font-normal mb-10 font-Dm-sans tracking-wide">
           Art is the purest form of human expression, a revolution that
           transcends boundaries, cultures, and languages. From delicate
           brushstrokes on canvas to the raw sparks of sculpture.
         </p>
 
-        <div className="bg-white p-6 sm:p-8 md:p-10 h-auto">
-  <div className="flex justify-center items-center">
-    {/* Swiper: Full Width */}
-    <div className="w-full">
-      <Swiper
-        modules={[Navigation]}
-        slidesPerView={1.4}
-        // centeredSlides={true}
-        loop={true}
-        spaceBetween={40}
-        onInit={(swiper) => {
-          swiper.params.navigation.prevEl = prevRef.current;
-          swiper.params.navigation.nextEl = nextRef.current;
-          swiper.navigation.init();
-          swiper.navigation.update();
-        }}
-      >
-        {slides.map((slide, index) => (
-          <SwiperSlide key={index}>
-            <img
-              src={slide.image}
-              alt={`Artist ${index + 1}`}
-              className="w-full h-64 sm:h-72 md:h-80 lg:h-[70vh] object-cover rounded-lg"
-            />
-          </SwiperSlide>
-        ))}
-        {/* Custom Navigation */}
-        <div className="flex justify-center mt-4 gap-4">
-          <button
-            ref={prevRef}
-            className="bg-gray-300 p-2 sm:p-3 rounded-full"
-          >
-            <FaArrowLeft size={18} className="text-black" />
-          </button>
-          <button
-            ref={nextRef}
-            className="bg-gray-300 p-2 sm:p-3 rounded-full"
-          >
-            <FaArrowRight size={18} className="text-black" />
-          </button>
-        </div>
-      </Swiper>
-    </div>
-  </div>
-</div>
+        {/* Swiper Section */}
+        <div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl">
+          <div className="flex justify-center items-center">
+            <div className="w-full">
+              <Swiper
+                modules={[Navigation]}
+                loop={true}
+                spaceBetween={20}
+                breakpoints={{
+                  0: { slidesPerView: 1 },
+                  480: { slidesPerView: 1 },
+                  640: { slidesPerView: 1.1 },
+                  768: { slidesPerView: 1.2 },
+                  1024: { slidesPerView: 1.3 },
+                  1280: { slidesPerView: 1.4 },
+                  1536: { slidesPerView: 1.4 },
+                }}
+                onInit={(swiper) => {
+                  swiper.params.navigation.prevEl = prevRef.current;
+                  swiper.params.navigation.nextEl = nextRef.current;
+                  swiper.navigation.init();
+                  swiper.navigation.update();
+                }}
+              >
+                {slides.map((slide, index) => (
+                  <SwiperSlide key={index}>
+                    <img
+                      src={slide.image}
+                      alt={`Artist ${index + 1}`}
+                      className="w-full h-60 sm:h-72 md:h-80 lg:h-[70vh] object-cover rounded-lg"
+                    />
+                  </SwiperSlide>
+                ))}
 
+                {/* Navigation */}
+                <div className="flex justify-center mt-4 gap-4">
+                  <button
+                    ref={prevRef}
+                    className="bg-gray-300 hover:bg-gray-400 p-2 sm:p-3 rounded-full transition"
+                  >
+                    <FaArrowLeft size={18} className="text-black" />
+                  </button>
+                  <button
+                    ref={nextRef}
+                    className="bg-gray-300 hover:bg-gray-400 p-2 sm:p-3 rounded-full transition"
+                  >
+                    <FaArrowRight size={18} className="text-black" />
+                  </button>
+                </div>
+              </Swiper>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
