@@ -1,5 +1,5 @@
 import React from 'react'
-import vedio from "../../assets/video/Sisu Slowmotion (1).mp4"
+import vedio from "../../assets/video/HOME FINAL SISU.mp4"
 function VedioAbout() {
   return (
     <div className="w-full flex justify-center bg-gradient-to-b from-[#002244] to-[#002244]">
