@@ -19,48 +19,43 @@ export default function Footer({
         </div>
 
         {/* Contact Info */}
-        <div className="md:w-1/3 w-full space-y-4 text-center text-lg font-normal">
-          <p className="flex items-center justify-center space-x-2">
-            <MdLocationOn className="text-orange-400" />
+        <div className="md:w-1/3 w-full space-y-4 text-left text-lg font-normal md:ml-20">
+          <p className="flex space-x-6">
+            <MdLocationOn className="h-6 w-6" />
             <span>Dublin, Ireland</span>
           </p>
-          <p className="flex items-center justify-center space-x-2">
-            <MdEmail className="text-orange-400" />
+          <p className="flex space-x-6">
+            <MdEmail className="h-6 w-6" />
             <span>sisu@sidus-eclipse.com</span>
           </p>
-          <p className="flex items-center justify-center space-x-2">
-            <MdPhone className="text-orange-400" />
+          <p className="flex space-x-6">
+            <MdPhone className="h-6 w-6" />
             <span>+353 83 874 2235</span>
           </p>
         </div>
         {/* Quick Links */}
         <div className="md:w-1/3 w-full text-sm text-center md:text-left">
-          <h3 className="text-2xl font-medium mb-4 text-orange-400">
+          <h3 className="text-2xl font-medium mb-4 text-[#F69005]">
             Quick links
           </h3>
           <ul className="space-y-2 text-lg font-normal">
-               <li>
-              <Link to="/" className="hover:text-orange-400">
-                Home
+            <li>
+              <Link to="/about" className="hover:text-[#F69005]">
+                About
               </Link>
             </li>
             <li>
-              <Link to="/about" className="hover:text-orange-400">
-                About us
+              <Link to="/featured-artist" className="hover:text-[#F69005]">
+                Featured Artists
               </Link>
             </li>
             <li>
-              <Link to="/featured-artist" className="hover:text-orange-400">
-                Featured artists
+              <Link to="/gallery" className="hover:text-[#F69005]">
+                Exclusive Arts
               </Link>
             </li>
             <li>
-              <Link to="/gallery" className="hover:text-orange-400">
-                Gailearaí
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact" className="hover:text-orange-400">
+              <Link to="/contact" className="hover:text-[#F69005]">
                 Contact
               </Link>
             </li>

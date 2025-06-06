@@ -8,8 +8,8 @@ function Header() {
   const menuItems = [
     { title: "Home", path: "/" },
     { title: "About", path: "/about" },
-    { title: "Featured Artist", path: "/featured-artist" },
-    { title: "Gailearaí", path: "/gallery" },
+    { title: "Featured Artists", path: "/featured-artist" },
+    { title: "Exclusive Art", path: "/gallery" },
   ];
 
   const toggleMobileMenu = () => {
@@ -20,19 +20,20 @@ function Header() {
     <>
       {/* Desktop Header */}
       <div className="relative z-10 hidden md:flex justify-center font-Dm-sans">
-        <div className="flex gap-16 px-10 py-2 rounded-full border items-center justify-center border-gray-500/80 backdrop-blur-md bg-[#00000080]">
+        <div className="flex gap-24 px-10 py-2 items-center justify-center">
           {menuItems.map((item, index) => (
             <Link
               key={index}
               to={item.path}
-              className="relative text-[#F69005] text-xl font-normal after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#F69005] after:transition-all after:duration-300 hover:after:w-full"
+              className="relative text-[#ffffff] text-xl font-normal group"
             >
               {item.title}
+              <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-[#ffffff] transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
           <Link
             to="/contact"
-            className="bg-white text-black hover:text-[#ffffff] border border-transparent hover:border-[#F69005] text-lg font-semibold px-4 py-1 rounded-full hover:bg-[#00000080] transition"
+            className="text-[#ffffff] border border-transparent hover:border-[#F69005] text-xl font-normal px-4 py-1 rounded-full"
           >
             Contact Us
           </Link>
@@ -52,7 +53,7 @@ function Header() {
           {menuItems.map((item, index) => (
             <Link
               key={index}
-              to={item.path} 
+              to={item.path}
               onClick={() => setIsMobileMenuOpen(false)}
               className="text-[#F69005] text-lg font-medium"
             >

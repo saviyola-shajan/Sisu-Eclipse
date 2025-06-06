@@ -9,7 +9,7 @@ function Reflection() {
         REFLECTION
       </h1>
 
-      <div className="absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 tracking-[0.3rem] sm:tracking-[1rem] md:tracking-[2rem] whitespace-nowrap flex flex-col items-center z-20">
+      <div className="absolute top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 tracking-[0.3rem] sm:tracking-[1rem] md:tracking-[2rem] whitespace-nowrap flex flex-col items-center z-20">
         <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold">
           {"REFLECTION".split("").map((char, index) => (
             <span
@@ -41,13 +41,25 @@ function Reflection() {
       </div>
 
       {open && (
-        <div className="absolute bottom-8 md:bottom-20 left-0 md:left-1/2 md:transform md:-translate-x-1/2 text-center max-w-2xl px-2 sm:px-4 text-xs sm:text-sm text-gray-300 z-10 font-Dm-sans">
-          <p>
-            This is your dropdown content. You can place any reflective message,
-            quote, or descriptive text here. It appears when the arrow is
-            clicked and hides again when closed.
-          </p>
-        </div>
+<div className="absolute bottom-8 md:bottom-14 left-1/2 -translate-x-1/2 w-full max-w-[70vw] flex items-center justify-center text-center px-2 sm:px-0 text-sm sm:text-lg text-gray-300 z-10 font-Dm-sans">
+  <p>
+    SISU values art as an intimate dialogue—between the artist, their
+    creation, and the individual who resonates with it. This resonance
+    validates the artist’s work, giving it purpose and meaning, while
+    offering the collector a reflection of their own emotions, story, or
+    vision.
+    <br />
+    In a world often driven by trends and mass appeal, SISU embraces the
+    unassuming, the quiet, and the rare. It’s about the power of subtlety and
+    the humility of creation. Art does not need to shout; it only needs to be
+    seen by the one who truly understands it. Through SISU, we connect these
+    moments, fostering a space where artists and collectors can find their
+    shared frequency, and where the stories behind each work are given the
+    reverence, they deserve.
+  </p>
+</div>
+
+
       )}
     </div>
   );

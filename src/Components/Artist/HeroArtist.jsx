@@ -34,13 +34,11 @@ function HeroArtist() {
           Artist
         </h1>
         <p className="text-white text-base sm:text-lg md:text-xl font-normal mb-10 font-Dm-sans tracking-wide">
-          Art is the purest form of human expression, a revolution that
-          transcends boundaries, cultures, and languages. From delicate
-          brushstrokes on canvas to the raw sparks of sculpture.
-        </p>
+         “ The artist translates silence into something you can see “
+        </p>  
 
         {/* Swiper Section */}
-        <div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl">
+        <div className="bg-white p-4 sm:p-6 md:p-8">
           <div className="flex justify-center items-center">
             <div className="w-full">
               <Swiper
@@ -68,7 +66,7 @@ function HeroArtist() {
                     <img
                       src={slide.image}
                       alt={`Artist ${index + 1}`}
-                      className="w-full h-60 sm:h-72 md:h-80 lg:h-[70vh] object-cover rounded-lg"
+                      className="w-full h-60 sm:h-72 md:h-80 lg:h-[70vh] object-cover "
                     />
                   </SwiperSlide>
                 ))}

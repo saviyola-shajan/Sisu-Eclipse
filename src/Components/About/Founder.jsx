@@ -5,7 +5,7 @@ function Founder() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#7a0202] to-[#1b101b] px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32 py-12 sm:py-16 text-white">
       {/* Heading */}
-      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-[#F69005] mb-10 text-center md:text-left">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-[#e98903] text-center md:text-left mb-6">
         Founder Voice
       </h2>
 
@@ -26,7 +26,7 @@ function Founder() {
         </div>
 
         {/* Right: Paragraph */}
-        <div className="md:w-2/3 w-full space-y-5 text-sm sm:text-base md:text-[15px] leading-relaxed font-light text-justify md:mt-12 ">
+        <div className="md:w-2/3 w-full ml-6 space-y-3 text-sm sm:text-base md:text-xl leading-relaxed font-light text-justify font-Dm-sans ">
           <p>
             * I started buying art in 2023. There was no grand plan behind
             it—just one image that caught my eye and made me stop. Something

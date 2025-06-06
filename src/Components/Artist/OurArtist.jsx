@@ -47,15 +47,15 @@ function OurArtist() {
         <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-normal text-[#F69005] mb-6 text-center md:text-left">
           Our Artist
         </h2>
-        <p className="text-base sm:text-lg text-[#ffffff] font-light md:text-left font-Dm-sans tracking-wide text-justify">
-          At its essence, S8UL is about those fleeting, transformative moments—a
-          brief yet powerful connection between the player and the art or
-          artist. Whether it's an instant spark or a connection that lingers
-          over time, it’s about capturing the unspoken magic of that
-          recognition: the knowing that a creator resonates with you, that it
-          moves you in some way. It’s about being grateful for the marvel of
-          beauty someone else has brought into existence, and silently, humbly
-          acknowledging that contribution without fanfare.
+        <p className="text-base sm:text-xl text-[#ffffff] font-normal md:text-left max-w-5xl font-Dm-sans tracking-wide text-justify">
+          “They’re gathered here on this site, but each one stands entirely on
+          their own—an individual voice, a distinct rhythm. You might sense a
+          connection between them, or maybe not. Some of them you’ll feel like
+          you almost know; others will remain a quiet mystery.<br/><br/> Their work may
+          offer clues—or not. Maybe it’s not about them at all. Maybe it’s about
+          you. Or a time. Or a place. What matters is what stirs in you as you
+          move through their art. Let curiosity guide you. The rest will unfold
+          as it should”
         </p>
       </div>
       <div className="w-full max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-0">

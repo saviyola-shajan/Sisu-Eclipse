@@ -34,17 +34,17 @@ function GalleryHeroSection() {
                 Crafted to Inspire
               </p>
               <p className="text-center md:text-left text-[#FFFFFF] font-normal mt-6 sm:mt-8 text-base sm:text-lg md:text-xl font-Dm-sans tracking-wide">
-                At SISUI, we believe every brushstroke tells a story and every
+                AAt SISUI, we believe every brushstroke tells a story and every
                 canvas holds a Universe of Emotions, waiting for someone like
                 you to Pause, Look Deeper, and Feel that Spark of Connection.
               </p>
             </div>
 
             <div className="w-full lg:w-1/2 flex items-center justify-center relative mt-10 lg:mt-0">
-              <button className="prev-btn absolute left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 top-1/2 transform -translate-y-1/2 z-10 bg-white/10 hover:bg-white/20 p-2 sm:p-3 rounded-full text-white text-lg sm:text-xl">
+              <button className="prev-btn absolute left-4 sm:left-8 md:left-12 lg:left-16 xl:left-20 top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 sm:p-3 rounded-full text-[#121212] text-lg sm:text-xl">
                 <FaAngleLeft />
               </button>
-              <button className="next-btn absolute right-4 sm:right-8 md:right-12 lg:right-16 xl:right-20 top-1/2 transform -translate-y-1/2 z-10 bg-white/10 hover:bg-white/20 p-2 sm:p-3 rounded-full text-white text-lg sm:text-xl">
+              <button className="next-btn absolute right-4 sm:right-8 md:right-12 lg:right-16 xl:right-20 top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 sm:p-3 rounded-full text-[#121212] text-lg sm:text-xl">
                 <FaAngleRight />
               </button>
 
@@ -62,7 +62,7 @@ function GalleryHeroSection() {
                     <img
                       src={image.src}
                       alt={image.alt}
-                      className="rounded-lg shadow-lg w-[280px] sm:w-[340px] md:w-[400px] lg:w-[450px] xl:w-96 h-[360px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-cover mx-auto"
+                      className="rounded-lg shadow-lg w-[280px] sm:w-[340px] md:w-[400px] lg:w-[450px] xl:w-[500px] h-[360px] sm:h-[400px] md:h-[450px] lg:h-[500px] object-cover mx-auto"
                     />
                   </SwiperSlide>
                 ))}

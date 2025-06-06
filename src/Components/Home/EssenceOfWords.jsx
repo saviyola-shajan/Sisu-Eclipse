@@ -3,23 +3,31 @@ import React, { useState } from "react";
 const words = [
   {
     word: "Aesthete",
-    meaning: "someone with deep sensitivity to the beauty of art or nature",
+    meaning: " someone with deep sensitivity to the beauty of art or nature ",
   },
   {
     word: "Ailyak",
-    meaning: "the subtle art of doing everything slowly and with no rush",
+    meaning:
+      " The subtle art of doing everything  calmly and without rushing, whilst enjoying the experience and life in general ",
   },
-  { word: "Besa", meaning: "a promise that can’t be broken" },
+  {
+    word: "Besa",
+    meaning:
+      " A pledge of honour to be able offer your word as collateral for deepest trust. an oath of loyalty made goodby the moral virtue of its bearer ",
+  },
   {
     word: "Elysian",
-    meaning: "beautiful or creative; divinely inspired; peaceful and perfect",
+    meaning: " Beautiful or creative deeply inspired peaceful and perfect ",
   },
   {
     word: "Duende",
-    meaning:
-      "a mysterious power that a work of art has to deeply move a person",
+    meaning: "The mysterious power of art to deeply move a person ",
   },
-  { word: "Meraki", meaning: "to do something with soul, creativity, or love" },
+  {
+    word: "Meraki",
+    meaning:
+      " To do something with soul, creativity,or love, to put something of  yourself in your work ",
+  },
 ];
 
 export default function EssenceOfWords() {
@@ -31,7 +39,7 @@ export default function EssenceOfWords() {
         <h1 className="font-normal text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-4 text-center md:text-left text-[#F69005]">
           The Essence of Words
         </h1>
-        <p className="text-base sm:text-lg md:text-xl font-normal">
+        <p className="text-base sm:text-lg md:text-xl font-normal font-Dm-sans">
           Art is the purest form of human expression, a medium that transcends
           boundaries, cultures, and languages. From delicate brushstrokes on
           canvas to the raw textures of sculpture
@@ -58,7 +66,7 @@ export default function EssenceOfWords() {
 
         {/* Right Meaning */}
         <div className="w-1/2 sm:w-2/3 mb-24 md:mb-0 flex items-center justify-center text-center md:bg-transparent bg-white/20 px-4 rounded-2xl">
-          <p className="text-base sm:text-xl md:text-2xl lg:text-3xl text-orange-400 transition-all duration-300 max-w-md sm:max-w-xl px-0 sm:px-4">
+          <p className="text-base sm:text-xl md:text-2xl lg:text-4xl text-[#F69005] font-medium  transition-all duration-300 max-w-xl sm:max-w-2xl px-0 sm:px-4 font-Dm-sans">
             “ {hoveredWord.meaning} ”
           </p>
         </div>

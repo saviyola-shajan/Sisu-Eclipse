@@ -21,7 +21,7 @@ function ExclusiveArts({
           { id: 3, img: img3 },
           { id: 2, img: img2 },
           { id: 5, img: img5 },
-           { id: 1, img: img1 },
+          { id: 1, img: img1 },
           { id: 4, img: img4 },
           { id: 6, img: img6 },
           { id: 3, img: img3 },
@@ -55,9 +55,9 @@ function ExclusiveArts({
         Exclusive Arts
       </h1>
       <p className="max-w-5xl text-[#ffffff] text-base sm:text-lg md:text-xl font-normal mb-0 font-Dm-sans tracking-wide text-center md:text-left">
-        Art is the purest form of human expression, a medium that transcends
-        boundaries, cultures, and languages. From delicate brushstrokes on
-        canvas to the raw textures of sculpture
+        The Vision Is Not to Create Art for Everyone, but to Honour the Rare and
+        Meaningful Moments When One Individual Recognizes the Essence of a Piece
+        and Claims It as Their Own
       </p>
       <div className="sticky top-0 h-[80vh] md:h-screen flex items-center justify-center">
         <div
