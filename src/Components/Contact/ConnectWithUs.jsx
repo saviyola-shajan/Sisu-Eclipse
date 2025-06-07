@@ -6,7 +6,7 @@ function ConnectWithUs() {
     <section className="w-full px-6 sm:px-10 md:px-16 lg:px-24 py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-[#0e1631] to-[#7B2C18] text-white">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl lg:text-5xl font-semibold text-[#F69005] mb-8 sm:mb-10 md:mb-12">
-          Connect With Us For<br className="hidden md:block" /> More Details
+          Connect Us For<br className="hidden md:block" /> More Details
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">

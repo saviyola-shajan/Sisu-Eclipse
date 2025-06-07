@@ -17,18 +17,17 @@ export default function Footer({
             className="rounded-xl w-full object-cover"
           />
         </div>
-
         {/* Contact Info */}
-        <div className="md:w-1/3 w-full space-y-4 text-left text-lg font-normal md:ml-20">
-          <p className="flex space-x-6">
+        <div className="md:w-1/3 w-full space-y-4 text-lg font-normal md:ml-20 text-center md:text-left flex flex-col items-center md:items-start">
+          <p className="flex items-center space-x-4">
             <MdLocationOn className="h-6 w-6" />
             <span>Dublin, Ireland</span>
           </p>
-          <p className="flex space-x-6">
+          <p className="flex items-center space-x-4">
             <MdEmail className="h-6 w-6" />
             <span>sisu@sidus-eclipse.com</span>
           </p>
-          <p className="flex space-x-6">
+          <p className="flex items-center space-x-4">
             <MdPhone className="h-6 w-6" />
             <span>+353 83 874 2235</span>
           </p>
@@ -62,10 +61,7 @@ export default function Footer({
           </ul>
         </div>
       </div>
-
-      {/* Divider */}
       <div className="border-t border-gray-700 my-6" />
-
       {/* Footer Bottom */}
       <div className="text-center text-xs text-gray-400 space-x-4">
         <Link to="/privacy-policy" className="hover:text-orange-400">

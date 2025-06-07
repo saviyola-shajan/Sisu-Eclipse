@@ -65,7 +65,7 @@ export default function EssenceOfWords() {
         </div>
 
         {/* Right Meaning */}
-        <div className="w-1/2 sm:w-2/3 mb-24 md:mb-0 flex items-center justify-center text-center md:bg-transparent bg-white/20 px-4 rounded-2xl">
+        <div className="w-2/3 md:mb-24 flex items-center justify-center text-center md:bg-transparent bg-white/20 px-2 rounded-2xl">
           <p className="text-base sm:text-xl md:text-2xl lg:text-4xl text-[#F69005] font-medium  transition-all duration-300 max-w-xl sm:max-w-2xl px-0 sm:px-4 font-Dm-sans">
             “ {hoveredWord.meaning} ”
           </p>

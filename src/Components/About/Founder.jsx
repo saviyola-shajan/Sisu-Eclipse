@@ -4,14 +4,14 @@ import img from "../../assets/images/image37.png";
 function Founder() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#7a0202] to-[#1b101b] px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32 py-12 sm:py-16 text-white">
-      {/* Heading */}
-      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-[#e98903] text-center md:text-left mb-6">
+      {/* Heading - Desktop */}
+      <h2 className="hidden md:block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-[#e98903] text-left mb-6">
         Founder Voice
       </h2>
 
       {/* Main Section */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-6">
-        {/* Left: Image + Name */}
+        {/* Left: Image + Name + Heading (Mobile) */}
         <div className="md:w-1/3 w-full flex flex-col items-center md:items-start">
           <div className="w-full rounded-xl overflow-hidden">
             <img
@@ -20,13 +20,16 @@ function Founder() {
               className="w-full object-cover rounded-xl"
             />
           </div>
-          <h3 className="text-lg sm:text-xl text-white font-serif text-center mx-auto">
+            <h2 className="block md:hidden text-3xl sm:text-4xl font-semibold text-[#e98903] text-center mt-6">
+            Founder Voice
+          </h2>
+          <h3 className="text-lg sm:text-xl text-white font-serif text-center mx-auto mt-3">
             Shane Lannon
           </h3>
         </div>
 
         {/* Right: Paragraph */}
-        <div className="md:w-2/3 w-full ml-6 space-y-3 text-sm sm:text-base md:text-xl leading-relaxed font-light text-justify font-Dm-sans ">
+        <div className="md:w-2/3 w-full md:ml-6 space-y-3 text-sm sm:text-base md:text-xl leading-relaxed font-light text-justify font-Dm-sans">
           <p>
             * I started buying art in 2023. There was no grand plan behind
             it—just one image that caught my eye and made me stop. Something

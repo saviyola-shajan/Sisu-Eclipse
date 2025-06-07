@@ -42,7 +42,7 @@ const artists = [
 
 function OurArtist() {
   return (
-    <div className="min-h-screen px-6 sm:px-10 md:px-16 lg:px-20 py-20 bg-gradient-to-b from-[#AF351D] via-[#1c1c39] to-[#010f20] text-white flex flex-col">
+    <div className="min-h-screen sm:px-10 md:px-16 lg:px-20 py-20 bg-gradient-to-b from-[#AF351D] via-[#1c1c39] to-[#010f20] text-white flex flex-col">
       <div className="w-full mx-auto text-center mb-12 px-4 sm:px-8 md:px-12">
         <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-normal text-[#F69005] mb-6 text-center md:text-left">
           Our Artist

@@ -33,7 +33,7 @@ function ArtWorks() {
   };
 
   return (
-    <div className="bg-gradient-to-b from-[#0f172a] via-[#281838] to-[#7b2c18] py-20 px-6 sm:px-10 md:px-32">
+    <div className="bg-gradient-to-b from-[#0f172a] via-[#281838] to-[#7b2c18] py-20 px-4 sm:px-10 md:px-32">
       <h2 className="text-5xl md:text-7xl font-bold text-[#F69005] mb-10 text-center md:text-left">
         ART WORKS
       </h2>
@@ -64,9 +64,9 @@ function ArtWorks() {
                     alt="artwork"
                     className="w-full h-full object-cover rounded-xl"
                   />
-                  <p className="text-sm text-[#F69005] font-medium mt-1 ml-1">
+                  {/* <p className="text-sm text-[#F69005] font-medium mt-1 ml-1">
                     © Ajith Kumar
-                  </p>
+                  </p> */}
                 </div>
               ))}
             </div>
@@ -89,9 +89,9 @@ function ArtWorks() {
               alt={`artwork-${i}`}
               className="w-full h-full object-cover rounded-xl "
             />
-            <p className="text-sm text-[#F69005] font-medium mt-1 ml-1">
+            {/* <p className="text-sm text-[#F69005] font-medium mt-1 ml-1">
               © Ajith Kumar
-            </p>
+            </p> */}
           </div>
         ))}
       </div>

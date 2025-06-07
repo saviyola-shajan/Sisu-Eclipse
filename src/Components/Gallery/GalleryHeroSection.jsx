@@ -23,7 +23,7 @@ function GalleryHeroSection() {
           Art Works
         </h1>
 
-        <div className="relative z-10 flex flex-col items-center mt-32 sm:mt-36 px-4 sm:px-6 lg:px-24">
+        <div className="relative z-10 flex flex-col items-center mt-28 sm:mt-36 px-4 sm:px-6 lg:px-24">
           <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-8 sm:gap-10">
             <div className="text-center lg:text-left w-full lg:w-1/2">
               <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-[#F69005]">

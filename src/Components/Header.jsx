@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FiMenu, FiX } from "react-icons/fi";
-
+import {  FiX } from "react-icons/fi";
+import { RiMenu2Line } from "react-icons/ri";
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -9,7 +9,7 @@ function Header() {
     { title: "Home", path: "/" },
     { title: "About", path: "/about" },
     { title: "Featured Artists", path: "/featured-artist" },
-    { title: "Exclusive Art", path: "/gallery" },
+    { title: "Exclusive Arts", path: "/gallery" },
   ];
 
   const toggleMobileMenu = () => {
@@ -41,21 +41,21 @@ function Header() {
       </div>
 
       {/* Mobile Header */}
-      <div className="md:hidden fixed top-0 left-0 right-0 z-50 px-4 py-2 flex items-center justify-end bg-[#00000080] backdrop-blur-md">
-        <button onClick={toggleMobileMenu} className="text-[#F69005] text-3xl">
-          {isMobileMenuOpen ? <FiX /> : <FiMenu />}
+      <div className="md:hidden fixed top-0 left-0 right-0 z-50 px-4 py-2 flex items-center justify-end">
+        <button onClick={toggleMobileMenu} className="text-[#E46104] text-3xl">
+          {isMobileMenuOpen ? <FiX /> : <RiMenu2Line />}
         </button>
       </div>
 
       {/* Mobile Menu Drawer */}
       {isMobileMenuOpen && (
-        <div className="md:hidden fixed top-10 left-0 right-0 z-40 bg-[#00000080] backdrop-blur-md p-4 flex flex-col items-center gap-4">
+<div className="md:hidden fixed top-0 left-[10%] right-0 z-40 bg-[linear-gradient(333deg,_#011730_0%,_#0F62C0_100%)] py-16  px-4 flex flex-col items-center gap-6">
           {menuItems.map((item, index) => (
             <Link
               key={index}
               to={item.path}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="text-[#F69005] text-lg font-medium"
+              className="text-[#ffffff] text-lg font-medium"
             >
               {item.title}
             </Link>
@@ -63,7 +63,7 @@ function Header() {
           <Link
             to="/contact"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="bg-white text-black hover:text-white border border-transparent hover:border-[#F69005] text-base font-semibold px-4 py-1 rounded-full hover:bg-[#00000080] transition"
+            className="bg-[#E46104] mt-4 text-[#ffffff] border border-transparent text-base font-semibold px-4 py-1 rounded-full"
           >
             Contact Us
           </Link>

@@ -22,16 +22,16 @@ function HeroArtist() {
   const nextRef = useRef(null);
 
   return (
-    <div className="bg-gradient-to-b from-[#011425] via-[#013461] to-[#AF351D] text-white min-h-screen px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20 2xl:px-24 py-10 sm:py-12 md:py-16">
+    <div className="bg-gradient-to-b from-[#011425] via-[#013461] to-[#AF351D] text-white md:min-h-screen px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20 2xl:px-24 py-10 sm:py-12 md:py-16">
       {/* Header */}
       <div className="absolute top-6 left-0 w-full z-20">
         <Header />
       </div>
 
-      <div className="max-w-7xl mx-auto mt-24 sm:mt-20 text-center md:text-left">
+      <div className="max-w-7xl mx-auto mt-16 sm:mt-20 text-center md:text-left">
         {/* Title */}
         <h1 className="text-[#F69005] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal mb-4">
-          Artist
+          Featured Artist
         </h1>
         <p className="text-white text-base sm:text-lg md:text-xl font-normal mb-10 font-Dm-sans tracking-wide">
          “ The artist translates silence into something you can see “
