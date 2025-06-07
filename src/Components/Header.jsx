@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import {  FiX } from "react-icons/fi";
+import { FiX } from "react-icons/fi";
 import { RiMenu2Line } from "react-icons/ri";
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -49,7 +49,7 @@ function Header() {
 
       {/* Mobile Menu Drawer */}
       {isMobileMenuOpen && (
-<div className="md:hidden fixed top-0 left-[10%] right-0 z-40 bg-[linear-gradient(333deg,_#011730_0%,_#0F62C0_100%)] py-16  px-4 flex flex-col items-center gap-6">
+        <div className="md:hidden fixed top-0 left-[10%] right-0 z-40 bg-gradient-to-b from-[#7b2c18] to-[#002F65] py-16  px-4 flex flex-col items-center gap-6">
           {menuItems.map((item, index) => (
             <Link
               key={index}

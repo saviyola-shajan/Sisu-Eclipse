@@ -31,7 +31,7 @@ function HeroArtist() {
       <div className="max-w-7xl mx-auto mt-16 sm:mt-20 text-center md:text-left">
         {/* Title */}
         <h1 className="text-[#F69005] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal mb-4">
-          Featured Artist
+          Featured Artists
         </h1>
         <p className="text-white text-base sm:text-lg md:text-xl font-normal mb-10 font-Dm-sans tracking-wide">
          “ The artist translates silence into something you can see “

@@ -8,7 +8,7 @@ function Artist() {
     <div>
       <HeroArtist/>
       <OurArtist/>
-      <Footer className="bg-gradient-to-b from-[#010f20] to-[#042957]"/>
+      {/* <Footer className="bg-gradient-to-b from-[#010f20] to-[#042957]"/> */}
     </div>
   )
 }

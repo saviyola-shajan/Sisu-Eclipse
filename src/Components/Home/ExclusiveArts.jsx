@@ -52,7 +52,7 @@ function ExclusiveArts({
       }}
     >
       <h1 className="text-[#F69005] font-normal text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-4 text-center md:text-left">
-        Exclusive Arts
+        Featured Art
       </h1>
       <p className="max-w-5xl text-[#ffffff] text-base sm:text-lg md:text-xl font-normal mb-0 font-Dm-sans tracking-wide text-center md:text-left">
         The Vision Is Not to Create Art for Everyone, but to Honour the Rare and
