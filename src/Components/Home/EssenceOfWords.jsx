@@ -39,7 +39,7 @@ export default function EssenceOfWords() {
 
         {/* Inner Text */}
         <div className="absolute inset-0 flex items-center justify-center text-center z-10 mt-12 px-4">
-          <p className="text-orange-400 text-sm md:text-lg font-Dm-sans max-w-[180px] md:max-w-2xs">
+          <p className="text-orange-400 text-[12px] md:text-lg font-Dm-sans max-w-[165px] md:max-w-2xs">
             " {meaning} "
           </p>
         </div>

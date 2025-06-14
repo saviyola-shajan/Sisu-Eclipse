@@ -7,7 +7,7 @@ export default function Footer({
 }) {
   return (
     <footer
-      className={`text-white font-Dm-sans px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20 2xl:px-32 py-10 ${className}`}
+      className={`text-white font-Dm-sans px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20 2xl:px-32 pt-24 pb-8 ${className}`}
     >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
         <div className="md:w-1/3 w-full">
