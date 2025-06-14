@@ -17,7 +17,7 @@ export default function EssenceOfWords() {
   const [selectedWord, setSelectedWord] = useState("Aesthete");
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-[#0f172a] to-[#7b2c18] text-white font-serif px-0 sm:px-6 md:px-10 lg:px-20 xl:px-32 py-10 sm:py-14 md:py-16">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-[#0f172a] to-[#7b2c18] text-white font-serif px-6 md:px-10 lg:px-20 xl:px-32 py-10 sm:py-14 md:py-16">
       <div className="text-left mb-12 w-full max-w-7xl">
         <h1 className="font-normal text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-4 text-center md:text-left text-[#F69005]">
           The Essence of Words
