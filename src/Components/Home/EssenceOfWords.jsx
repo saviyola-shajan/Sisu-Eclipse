@@ -59,7 +59,7 @@ export default function EssenceOfWords() {
           </button>
         </div>
 
-        <div className="absolute top-[10%] sm:top-[25%] right-[-30px] z-10">
+        <div className="absolute top-[10%] sm:top-[25%] right-[-10px] smright-[-30px] z-10">
           <button
             onMouseEnter={() => {
               setMeaning(wordMeanings["Elysian"]);
@@ -73,7 +73,7 @@ export default function EssenceOfWords() {
           </button>
         </div>
 
-        <div className="absolute bottom-[5%] sm:bottom-[25%] right-[-30px] z-10">
+        <div className="absolute bottom-[5%] sm:bottom-[25%] right-[-10px] smright-[-30px] z-10">
           <button
             onMouseEnter={() => {
               setMeaning(wordMeanings["Duende"]);
@@ -101,7 +101,7 @@ export default function EssenceOfWords() {
           </button>
         </div>
 
-        <div className="absolute bottom-[5%] sm:bottom-[25%] left-[-30px] z-10">
+        <div className="absolute bottom-[5%] sm:bottom-[25%] left-[-10px] sm:left-[-30px] z-10">
           <button
             onMouseEnter={() => {
               setMeaning(wordMeanings["Besa"]);
@@ -115,7 +115,7 @@ export default function EssenceOfWords() {
           </button>
         </div>
 
-        <div className="absolute top-[10%] sm:top-[25%] left-[-30px] z-10">
+        <div className="absolute top-[10%] sm:top-[25%] left-[-10px] sm:left-[-30px] z-10">
           <button
             onMouseEnter={() => {
               setMeaning(wordMeanings["Ailyak"]);
