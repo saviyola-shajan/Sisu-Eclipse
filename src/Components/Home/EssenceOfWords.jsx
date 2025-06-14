@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import sun2 from "../../assets/video/Sun.gif";
+
 const wordMeanings = {
   Aesthete: "someone with deep sensitivity to the beauty of art or nature",
   Elysian: "Beautiful or creative deeply inspired peaceful and perfect",
@@ -16,8 +17,8 @@ export default function EssenceOfWords() {
   const [selectedWord, setSelectedWord] = useState("Aesthete");
 
   return (
-    <div className="h-[80vh] md:h-[140vh] flex flex-col items-center justify-center bg-gradient-to-b from-[#0f172a] to-[#7b2c18] text-white font-serif px-4 sm:px-6 md:px-10 lg:px-20 xl:px-32 py-10 sm:py-14 md:py-16">
-      <div className="text-left mb-12">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-[#0f172a] to-[#7b2c18] text-white font-serif px-0 sm:px-6 md:px-10 lg:px-20 xl:px-32 py-10 sm:py-14 md:py-16">
+      <div className="text-left mb-12 w-full max-w-7xl">
         <h1 className="font-normal text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-4 text-center md:text-left text-[#F69005]">
           The Essence of Words
         </h1>
@@ -28,9 +29,9 @@ export default function EssenceOfWords() {
         </p>
       </div>
 
-      <div className="relative w-[350px] h-[350px] md:w-[950px] md:h-[750px] my-4 ">
+      <div className="relative w-[320px] h-[320px] sm:w-[520px] sm:h-[500px] md:w-[950px] md:h-[750px] my-4 max-w-full">
         {/* Ring Video Background */}
-        <img
+        <img  
           src={sun2}
           alt="glow"
           className="absolute inset-0 w-[110%] h-[110%] object-cover rounded-full pointer-events-none mb-32"
@@ -38,19 +39,19 @@ export default function EssenceOfWords() {
 
         {/* Inner Text */}
         <div className="absolute inset-0 flex items-center justify-center text-center z-10 mt-12 px-4">
-          <p className="text-orange-400 text-sm md:text-lg italic max-w-xs">
+          <p className="text-orange-400 text-sm md:text-lg font-Dm-sans max-w-[180px] md:max-w-2xs">
             " {meaning} "
           </p>
         </div>
 
         {/* Word Buttons Around */}
-<div className="absolute top-[-30px] left-1/2 -translate-x-1/2 z-10">
+        <div className="absolute top-[-30px] left-1/2 -translate-x-1/2 z-10">
           <button
             onMouseEnter={() => {
               setMeaning(wordMeanings["Aesthete"]);
               setSelectedWord("Aesthete");
             }}
-            className={`bg-white/10  font-bold text-4xl px-4 py-2 rounded-md transition-colors duration-200 ${
+            className={`bg-white/10 font-bold text-xl md:text-4xl px-2 md:px-4 py-1 md:py-2 rounded-md transition-colors duration-200 ${
               selectedWord === "Aesthete" ? "text-white" : "text-white/50"
             }`}
           >
@@ -58,13 +59,13 @@ export default function EssenceOfWords() {
           </button>
         </div>
 
-        <div className="absolute top-[25%] right-[-30px] z-10">
+        <div className="absolute top-[10%] sm:top-[25%] right-[-30px] z-10">
           <button
             onMouseEnter={() => {
               setMeaning(wordMeanings["Elysian"]);
               setSelectedWord("Elysian");
             }}
-            className={`bg-white/10 font-bold text-4xl px-4 py-2 rounded-md transition-colors duration-200 ${
+            className={`bg-white/10 font-bold text-xl md:text-4xl px-2 md:px-4 py-1 md:py-2 rounded-md transition-colors duration-200 ${
               selectedWord === "Elysian" ? "text-white" : "text-white/50"
             }`}
           >
@@ -72,13 +73,13 @@ export default function EssenceOfWords() {
           </button>
         </div>
 
-        <div className="absolute bottom-[25%] right-[-30px] z-10">
+        <div className="absolute bottom-[5%] sm:bottom-[25%] right-[-30px] z-10">
           <button
             onMouseEnter={() => {
               setMeaning(wordMeanings["Duende"]);
               setSelectedWord("Duende");
             }}
-            className={`bg-white/10 font-bold text-4xl px-4 py-2 rounded-md transition-colors duration-200 ${
+            className={`bg-white/10 font-bold text-xl md:text-4xl px-2 md:px-4 py-1 md:py-2 rounded-md transition-colors duration-200 ${
               selectedWord === "Duende" ? "text-white" : "text-white/50"
             }`}
           >
@@ -86,13 +87,13 @@ export default function EssenceOfWords() {
           </button>
         </div>
 
-        <div className="absolute bottom-[-30px] left-1/2 -translate-x-1/2 z-10">
+        <div className="absolute bottom-[-50px] left-1/2 -translate-x-1/2 z-10 ">
           <button
             onMouseEnter={() => {
               setMeaning(wordMeanings["Meraki"]);
               setSelectedWord("Meraki");
             }}
-            className={`bg-white/10 font-bold text-4xl px-4 py-2 rounded-md transition-colors duration-200 ${
+            className={`bg-white/10 font-bold text-xl md:text-4xl px-2 md:px-4 py-1 md:py-2 rounded-md transition-colors duration-200 ${
               selectedWord === "Meraki" ? "text-white" : "text-white/50"
             }`}
           >
@@ -100,13 +101,13 @@ export default function EssenceOfWords() {
           </button>
         </div>
 
-        <div className="absolute bottom-[25%] left-[-30px] z-10">
+        <div className="absolute bottom-[5%] sm:bottom-[25%] left-[-30px] z-10">
           <button
             onMouseEnter={() => {
               setMeaning(wordMeanings["Besa"]);
               setSelectedWord("Besa");
             }}
-            className={`bg-white/10 font-bold text-4xl px-4 py-2 rounded-md transition-colors duration-200 ${
+            className={`bg-white/10 font-bold text-xl md:text-4xl px-2 md:px-4 py-1 md:py-2 rounded-md transition-colors duration-200 ${
               selectedWord === "Besa" ? "text-white" : "text-white/50"
             }`}
           >
@@ -114,13 +115,13 @@ export default function EssenceOfWords() {
           </button>
         </div>
 
-        <div className="absolute top-[25%] left-[-30px] z-10">
+        <div className="absolute top-[10%] sm:top-[25%] left-[-30px] z-10">
           <button
             onMouseEnter={() => {
               setMeaning(wordMeanings["Ailyak"]);
               setSelectedWord("Ailyak");
             }}
-            className={`bg-white/10 font-bold text-4xl px-4 py-2 rounded-md transition-colors duration-200 ${
+            className={`bg-white/10 font-bold text-xl md:text-4xl px-2 md:px-4 py-1 md:py-2 rounded-md transition-colors duration-200 ${
               selectedWord === "Ailyak" ? "text-white" : "text-white/50"
             }`}
           >
