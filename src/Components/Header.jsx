@@ -21,6 +21,7 @@ function Header() {
       {/* Desktop Header */}
       <div className="relative z-10 hidden md:flex justify-center font-Dm-sans">
         <div className="flex gap-24 px-10 py-2 items-center justify-center">
+        <h1 className="text-[#ffffff]/20 text-5xl font-medium mb-8">SISU</h1>
           {menuItems.map((item, index) => (
             <Link
               key={index}
@@ -37,6 +38,8 @@ function Header() {
           >
             Contact Us
           </Link>
+                  <h1 className="text-[#ffffff]/20 text-5xl font-medium mb-8">ECLIPSE</h1>
+
         </div>
       </div>
 

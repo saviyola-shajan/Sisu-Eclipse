@@ -25,11 +25,11 @@ export default function Footer({
           </p>
           <p className="flex items-center space-x-4">
             <MdEmail className="h-6 w-6" />
-            <span>sisu@sidus-eclipse.com</span>
+            <span>shane@sisueclipse.com</span>
           </p>
           <p className="flex items-center space-x-4">
             <MdPhone className="h-6 w-6" />
-            <span>+353 83 874 2235</span>
+            <span>+353 83 874 2273</span>
           </p>
         </div>
         {/* Quick Links */}

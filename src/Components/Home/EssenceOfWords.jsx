@@ -28,7 +28,7 @@ export default function EssenceOfWords() {
         </p>
       </div>
 
-      <div className="relative w-[350px] h-[350px] md:w-[800px] md:h-[750px] my-6 ">
+      <div className="relative w-[350px] h-[350px] md:w-[950px] md:h-[750px] my-4 ">
         {/* Ring Video Background */}
         <img
           src={sun2}
@@ -45,88 +45,88 @@ export default function EssenceOfWords() {
 
         {/* Word Buttons Around */}
 <div className="absolute top-[-30px] left-1/2 -translate-x-1/2 z-10">
-  <button
-    onClick={() => {
-      setMeaning(wordMeanings["Aesthete"]);
-      setSelectedWord("Aesthete");
-    }}
-    className={`bg-white/10 text-xl font-bold px-3 py-1 rounded-md transition-colors duration-200 ${
-      selectedWord === "Aesthete" ? "text-white" : "text-white/50"
-    }`}
-  >
-    Aesthete
-  </button>
-</div>
+          <button
+            onMouseEnter={() => {
+              setMeaning(wordMeanings["Aesthete"]);
+              setSelectedWord("Aesthete");
+            }}
+            className={`bg-white/10  font-bold text-4xl px-4 py-2 rounded-md transition-colors duration-200 ${
+              selectedWord === "Aesthete" ? "text-white" : "text-white/50"
+            }`}
+          >
+            Aesthete
+          </button>
+        </div>
 
-<div className="absolute top-[25%] right-[-30px] z-10">
-  <button
-    onClick={() => {
-      setMeaning(wordMeanings["Elysian"]);
-      setSelectedWord("Elysian");
-    }}
-    className={`bg-white/10 font-bold text-xl px-3 py-1 rounded-md transition-colors duration-200 ${
-      selectedWord === "Elysian" ? "text-white" : "text-white/50"
-    }`}
-  >
-    Elysian
-  </button>
-</div>
+        <div className="absolute top-[25%] right-[-30px] z-10">
+          <button
+            onMouseEnter={() => {
+              setMeaning(wordMeanings["Elysian"]);
+              setSelectedWord("Elysian");
+            }}
+            className={`bg-white/10 font-bold text-4xl px-4 py-2 rounded-md transition-colors duration-200 ${
+              selectedWord === "Elysian" ? "text-white" : "text-white/50"
+            }`}
+          >
+            Elysian
+          </button>
+        </div>
 
-<div className="absolute bottom-[25%] right-[-30px] z-10">
-  <button
-    onClick={() => {
-      setMeaning(wordMeanings["Duende"]);
-      setSelectedWord("Duende");
-    }}
-    className={`bg-white/10 font-bold text-xl px-3 py-1 rounded-md transition-colors duration-200 ${
-      selectedWord === "Duende" ? "text-white" : "text-white/50"
-    }`}
-  >
-    Duende
-  </button>
-</div>
+        <div className="absolute bottom-[25%] right-[-30px] z-10">
+          <button
+            onMouseEnter={() => {
+              setMeaning(wordMeanings["Duende"]);
+              setSelectedWord("Duende");
+            }}
+            className={`bg-white/10 font-bold text-4xl px-4 py-2 rounded-md transition-colors duration-200 ${
+              selectedWord === "Duende" ? "text-white" : "text-white/50"
+            }`}
+          >
+            Duende
+          </button>
+        </div>
 
-<div className="absolute bottom-[-30px] left-1/2 -translate-x-1/2 z-10">
-  <button
-    onClick={() => {
-      setMeaning(wordMeanings["Meraki"]);
-      setSelectedWord("Meraki");
-    }}
-    className={`bg-white/10 font-bold text-xl px-3 py-1 rounded-md transition-colors duration-200 ${
-      selectedWord === "Meraki" ? "text-white" : "text-white/50"
-    }`}
-  >
-    Meraki
-  </button>
-</div>
+        <div className="absolute bottom-[-30px] left-1/2 -translate-x-1/2 z-10">
+          <button
+            onMouseEnter={() => {
+              setMeaning(wordMeanings["Meraki"]);
+              setSelectedWord("Meraki");
+            }}
+            className={`bg-white/10 font-bold text-4xl px-4 py-2 rounded-md transition-colors duration-200 ${
+              selectedWord === "Meraki" ? "text-white" : "text-white/50"
+            }`}
+          >
+            Meraki
+          </button>
+        </div>
 
-<div className="absolute bottom-[25%] left-[-30px] z-10">
-  <button
-    onClick={() => {
-      setMeaning(wordMeanings["Besa"]);
-      setSelectedWord("Besa");
-    }}
-    className={`bg-white/10 font-bold text-xl px-3 py-1 rounded-md transition-colors duration-200 ${
-      selectedWord === "Besa" ? "text-white" : "text-white/50"
-    }`}
-  >
-    Besa
-  </button>
-</div>
+        <div className="absolute bottom-[25%] left-[-30px] z-10">
+          <button
+            onMouseEnter={() => {
+              setMeaning(wordMeanings["Besa"]);
+              setSelectedWord("Besa");
+            }}
+            className={`bg-white/10 font-bold text-4xl px-4 py-2 rounded-md transition-colors duration-200 ${
+              selectedWord === "Besa" ? "text-white" : "text-white/50"
+            }`}
+          >
+            Besa
+          </button>
+        </div>
 
-<div className="absolute top-[25%] left-[-30px] z-10">
-  <button
-    onClick={() => {
-      setMeaning(wordMeanings["Ailyak"]);
-      setSelectedWord("Ailyak");
-    }}
-    className={`bg-white/10 font-bold text-xl px-3 py-1 rounded-md transition-colors duration-200 ${
-      selectedWord === "Ailyak" ? "text-white" : "text-white/50"
-    }`}
-  >
-    Ailyak
-  </button>
-</div>
+        <div className="absolute top-[25%] left-[-30px] z-10">
+          <button
+            onMouseEnter={() => {
+              setMeaning(wordMeanings["Ailyak"]);
+              setSelectedWord("Ailyak");
+            }}
+            className={`bg-white/10 font-bold text-4xl px-4 py-2 rounded-md transition-colors duration-200 ${
+              selectedWord === "Ailyak" ? "text-white" : "text-white/50"
+            }`}
+          >
+            Ailyak
+          </button>
+        </div>
       </div>
     </div>
   );
