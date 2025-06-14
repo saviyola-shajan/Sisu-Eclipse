@@ -22,7 +22,7 @@ const HeroAbout = () => {
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
         <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md  mx-auto md:mx-0 h-80 sm:h-[480px]">
-          <div className="absolute w-full top-4 sm:top-6 left-4 sm:left-8 h-full border-[#E46104] border z-10 rounded-xl" />
+          <div className="absolute w-full top-4 sm:top-6 left-4 sm:left-8 h-full  rounded-xl" />
           <img
             src={img}
             alt="About Art"
