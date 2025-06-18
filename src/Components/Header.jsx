@@ -20,13 +20,13 @@ function Header() {
     <>
       {/* Desktop Header */}
       <div className="relative z-10 hidden md:flex justify-center font-Dm-sans">
-        <div className="flex gap-24 px-10 py-2 items-center justify-center">
-        <h1 className="text-[#ffffff]/20 text-5xl font-medium mb-8">SISU</h1>
+        <div className="flex gap-28 px-2 py-2 items-center justify-center">
+          <h1 className="text-[#ffffff]/15 text-5xl font-medium mb-8">SISU</h1>
           {menuItems.map((item, index) => (
             <Link
               key={index}
               to={item.path}
-              className="relative text-[#ffffff] text-xl font-normal group"
+              className="relative text-[#ffffff] text-lg font-normal group"
             >
               {item.title}
               <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-[#ffffff] transition-all duration-300 group-hover:w-full"></span>
@@ -38,8 +38,9 @@ function Header() {
           >
             Contact Us
           </Link>
-                  <h1 className="text-[#ffffff]/20 text-5xl font-medium mb-8">ECLIPSE</h1>
-
+          <h1 className="text-[#ffffff]/15 text-5xl font-medium mb-8">
+            ECLIPSE
+          </h1>
         </div>
       </div>
 

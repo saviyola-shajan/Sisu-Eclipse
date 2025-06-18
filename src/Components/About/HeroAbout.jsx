@@ -9,7 +9,7 @@ const HeroAbout = () => {
         <Header />
       </div>
 
-      <div className="text-center md:text-left mb-8 sm:mb-12 mt-16">
+      <div className="text-center md:text-left mb-8 sm:mb-12 mt-24">
         <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal text-[#F69005] mb-4">
           About
         </h2>
