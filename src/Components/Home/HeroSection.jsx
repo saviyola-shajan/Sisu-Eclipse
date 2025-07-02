@@ -1,5 +1,5 @@
 import React from "react";
-import sisiuVideo from "../../assets/video/HOME FINAL SISU.mp4";
+const sisiuVideo = "https://res.cloudinary.com/dwzscisa6/video/upload/v1751459276/07-01-25_pdbl00.mp4";
 import Header from "../Header";
 
 function HeroSection() {
